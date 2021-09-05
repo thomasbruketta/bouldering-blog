@@ -5,10 +5,11 @@ import { DetailPage } from "./templates/DetailPage";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { ThemeProvider } from "styled-components";
+import { theme } from "./theme";
 
 function App() {
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <Router>
         <div>
           <Navbar />
