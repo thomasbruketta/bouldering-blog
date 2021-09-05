@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
+import { INavbarProps } from "./types";
 
-export function Navbar() {
+export function Navbar({ children }: INavbarProps) {
   return (
-    <nav>
-      <ul>
-        <Link to="/">Home</Link>
-      </ul>
+    <nav aria-label="Main">
+      <ul>{children}</ul>
     </nav>
   );
 }

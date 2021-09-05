@@ -4,12 +4,12 @@ import { getSpace, IGetSpace } from "./space";
 
 export interface ITheme {
   colors: IColors;
-  space: IGetSpace;
+  getSpace: IGetSpace;
   motion: IMotion;
 }
 
 export const theme: ITheme = {
   colors: colors,
-  space: getSpace,
+  getSpace: getSpace,
   motion: motion,
 };

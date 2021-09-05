@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { DetailPage } from "./templates/DetailPage";
-import { Navbar } from "./components/Navbar";
+import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
@@ -12,7 +12,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <div>
-          <Navbar />
+          <Header />
           <Switch>
             <Route path="/post">
               <DetailPage />
